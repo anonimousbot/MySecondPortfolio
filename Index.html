@@ -732,6 +732,101 @@
                 width: var(--skill-width);
             }
         }
+
+         /* Projects Section */
+        .projects {
+            background: var(--bg-lighter);
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid rgba(16, 185, 129, 0.1);
+            transition: all 0.5s ease;
+            box-shadow: var(--shadow);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .project-video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background: #F3F4F6;
+            overflow: hidden;
+        }
+        
+        .project-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .project-content {
+            padding: 40px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+        
+        .project-title {
+            font-family: var(--font-display);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        
+        .project-link {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .project-link:hover {
+            transform: rotate(45deg) scale(1.1);
+        }
+        
+        .project-description {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .project-tag {
+            padding: 8px 16px;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
         
         /* Services Section */
         .services {
@@ -1410,6 +1505,52 @@
             </div>
         </div>
     </section>
+
+     <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Featured Work</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-description">
+                    Building solutions that make a difference
+                </p>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-video-container">
+                    <!-- Replace with your actual video URL -->
+                    <video class="project-video" controls poster="Assets/img/profile/T-Socket Gadgets _ The Right Socket for All Plugs - Google Chrome 09_03_2026 12_16_20.png">
+                        <source src="Assets/img/profile/T-Socket Gadgets _ The Right Socket for All Plugs - Google Chrome 2026-03-09 12-12-56.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                        </div>
+                        <a href="https://tsocket-app-tn96.vercel.app/" target="_blank" class="project-link" title="View Project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    
+                    <p class="project-description">
+                     Developed a responsive gadget store website using HTML, CSS, and JavaScript, showcasing products and providing a smooth user experience. The site features a clean design, product catalog, and contact section, built to demonstrate front-end skills and responsiveness
+                    </p>
+                    
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     
     <!-- Services Section -->
     <section id="services" class="services">
